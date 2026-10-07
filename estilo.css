@@ -1,0 +1,113 @@
+/* estilo.css — Café Botânica · VERSÃO CORRIGIDA (material do docente)
+
+   As oito correções do E11, todas conferidas contra a PARTE 5 do instrucao.md:
+
+   1. contraste — a abertura era fundo escuro com texto escuro; agora é fundo claro
+   2. cor da marca — o azul #2b6cb0 virou o verde #1c3a26 da marca
+   3. cor de ação — o verde ficou SÓ no botão; título, menu, borda e rodapé são neutros
+   4. tipografia — serifa nos títulos, sem serifa no texto (estava invertido)
+   5. tamanhos — de 6 para 4: 34 · 24 · 16 · 14
+   6. espaçamento — section voltou a 40px, o "espaço em branco generoso" da referência
+   7. botão — padding de volta: é o espaço por dentro da caixa
+   8. largura da linha — max-width de 62ch no parágrafo
+
+   ⚠️ O item 3 é o que muda a página de verdade: com a cor de ação em um lugar só,
+   o botão de WhatsApp passa a ser a única coisa colorida da tela. É a demonstração
+   do fechamento. */
+
+
+/* ---------- vale para a página toda ---------- */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, Arial, sans-serif;
+  color: #23281f;
+  background: #faf8f4;
+  line-height: 1.55;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+
+/* ---------- topo ---------- */
+
+.topo {
+  background: #e8e2d4;
+  border-bottom: 3px solid #cfc6b2;
+  padding: 18px 24px;
+  text-align: center;
+}
+
+.topo .logo { width: 190px; margin: 0 auto 8px; }
+
+.topo nav a {
+  color: #23281f;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 16px;
+  border-bottom: 1px solid transparent;
+}
+
+.topo nav a:hover { border-bottom-color: #23281f; }
+
+
+/* ---------- miolo ---------- */
+
+main { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+section { padding: 40px 0; border-bottom: 1px solid #e6e2dc; }
+
+h1, h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #23281f;
+}
+
+.abertura {
+  padding: 40px 0;
+}
+
+.abertura h1 { font-size: 34px; margin: 0 0 12px; line-height: 1.2; }
+
+h2 { font-size: 24px; margin: 0 0 14px; }
+
+p { font-size: 16px; margin: 0 0 12px; max-width: 62ch; }
+
+ul { padding-left: 20px; font-size: 16px; }
+
+li { margin-bottom: 6px; }
+
+section img {
+  margin-top: 18px;
+  border-radius: 6px;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 22px;
+  background: #1c3a26;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/* ---------- rodapé ---------- */
+
+footer {
+  background: #e8e2d4;
+  color: #23281f;
+  text-align: center;
+  padding: 24px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+footer p { margin: 0 auto 4px; }
